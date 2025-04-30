@@ -21,9 +21,9 @@ function bagi($a, $b) {
 
 echo "Operasi disetiap indexnya <br>";
 
-$v_first2 = [20,30,4,50];
-$operator2 = ['+', '-', '*', '/'];
-$v_second2 = [20,20,10,5];
+$v_first2 = [20,30,4,50, 10, 100, 2000];
+$operator2 = ["+", "-", "*", "/", "*", "+", "/"];
+$v_second2 = [20,20,10,5, 2, 10, 2];
 
 
 foreach ($operator2 as $key_op => $op) {
@@ -44,7 +44,7 @@ echo "<br><br><br>";
 
 // $v_first = [2,3,4];
 // $v_second = [1,2,3];
-// $operator = ['+' => "Penjumlahan", '-' => "Pengurangan", '*' => "perkalian", '/' => "Pembagian"];
+// $operator = ["+" => "Penjumlahan", "-" => "Pengurangan", "*" => "perkalian", "/" => "Pembagian"];
 
 // echo "Operasi disetiap nilainya<br>" . str_repeat("=", 20) . "<br>";
 
