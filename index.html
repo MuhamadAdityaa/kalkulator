@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="proses.php" method="POST">
+        <label for="nama-depan">Nama Depan:</label>
+        <input type="text" id="nama-depan" name="nama_depan" required><br>
+        <label for="nama-belakang">Nama Belakang:</label>
+        <input type="text" id="nama-belakang" name="nama_belakang" required><br>
+
+
+        <label for="tingkat">Tingkat pendidikan</label>
+        <select name="tingkat" id="tingkat" required>
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA/SMK">SMA/SMK</option>
+        </select><br>
+
+
+        <label for="gender">Jenis kelamin</label>
+        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br>
+
+
+        <label for="hobby">hobby</label><br>
+        <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+        <label for="membaca">Membaca</label><br>
+        <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
+        <label for="menulis">Menulis</label><br>
+        <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+        <label for="olahraga">Olahraga</label><br>
+        <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+        <label for="musik">Musik</label><br>
+
+        <button>submit</button>
+    </form>
+</body>
+</html>
